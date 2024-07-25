@@ -1,7 +1,7 @@
 import { type ClassValue, clsx } from "clsx"
 import { twMerge } from "tailwind-merge"
 import { BOOKS_API, bookShelf } from "./constants"
-import { BookVolume, BookVolumeResponse } from "./types"
+import { BookVolumeResponse } from "./types"
 
 export function cn(...inputs: ClassValue[]) {
 	return twMerge(clsx(inputs))
