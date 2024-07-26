@@ -64,7 +64,7 @@ function App() {
 					</section>
 					<section className="relative sm:h-[48%] grid sm:grid-cols-12 sm:auto-rows-max gap-3 sm:gap-4 w-full max-w-[28em] sm:w-full sm:max-w-[50em] text-sm sm:text-md place-items-center">
 						<div className="flex flex-col gap-2 sm:gap-2 col-span-12 sm:col-span-7 sm:row-span-2 w-full border border-gray-200 rounded-lg shadow-md p-5 justify-center bg-gradient-to-br from-gray-50 to-zinc-100 group">
-							<div className="relative group flex items-center justify-center text:lg sm:text-2xl shadow-md w-fit p-2 sm:p-3 rounded-xl border border-gray-100 transition-all group-hover:bg-img-gradient">
+							<div className="relative group flex items-center justify-center text:lg sm:text-2xl shadow-md w-fit p-2 sm:p-3 rounded-xl border border-gray-100 transition-all group-hover:bg-img-gradient duration-700">
 								💼
 							</div>
 
