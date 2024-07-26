@@ -63,6 +63,9 @@ export const toolings = [{
 }, {
 	tool: 'Jest',
 	link: '/images/logos/jest.svg'
+}, {
+	tool: 'MSW',
+	link: '/images/logos/msw.svg'
 }]
 
 export const socials = [{

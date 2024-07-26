@@ -2,8 +2,17 @@ import { cn } from "./lib/utils"
 
 import { experiences, introItems, socials, toolings } from "./lib/constants";
 import { useGetReads } from "./lib/hooks/useGetReads";
+import ReactGA from "react-ga4";
 
 function App() {
+	ReactGA.initialize(import.meta.env.VITE_GOOGLE_ANALYTICS_ID)
+
+	ReactGA.send({
+		hitType: "pageview",
+		page: window.location.pathname,
+		title: "Home"
+	})
+
 	const { isSuccess, error, data: rawDataItems } = useGetReads()
 	const data = rawDataItems?.flat().map((item) => ({
 		title: item?.items[0]?.volumeInfo.title,
@@ -26,9 +35,9 @@ function App() {
 				</header>
 				<main className="relative min-h-fit sm:h-[80%] min-w-[22em] sm:min-w-[40em] flex flex-col mt-6 w-full items-center gap-3">
 					<section className="relative sm:h-[50%] grid size-auto sm:grid-cols-12 sm:grid-rows-2 gap-3 sm:gap-2 w-full max-w-[28em] sm:w-full sm:max-w-[50em] text-sm sm:text-md place-items-center ">
-						<div className="relative sm:col-span-6 sm:row-span-1 flex flex-row gap-1 w-full border border-gray-200 rounded-lg shadow-md p-4 px-6 justify-between bg-gradient-to-br from-gray-50 to-zinc-100">
+						<div className="relative sm:col-span-6 sm:row-span-1 flex flex-row gap-1 w-full border border-gray-200 rounded-lg shadow-md p-4 px-6 justify-between bg-gradient-to-br from-gray-50 to-zinc-100 group">
 							<div className="flex flex-col gap-2">
-								<div className="relative group flex items-center justify-center text:md sm:text-2xl shadow-md w-fit p-2 sm:p-3 rounded-xl border border-gray-100 transition-all ">
+								<div className="relative group flex items-center justify-center text:md sm:text-2xl shadow-md w-fit p-2 sm:p-3 rounded-xl border border-gray-100 transition-all group-hover:bg-img-gradient">
 									👨🏾‍🦱
 								</div>
 
@@ -93,7 +102,7 @@ function App() {
 							<p className="font-outfitRegular">Let's connect.</p>
 							<p className="font-outfitLight text-gray-500 text-sm">Some places you can find me</p>
 							<div className="grid grid-cols-4 gap-1 flex-wrap mt-3 w-full place-items-center">
-								{socials.map((social) => <a key={social.name} href={social.profile}><img src={social.logo} alt={social.name} className="w-8" /></a>)}
+								{socials.map((social) => <a key={social.name} href={social.profile} target="_blank"><img src={social.logo} alt={social.name} className="w-8" /></a>)}
 							</div>
 						</div>
 
@@ -121,8 +130,8 @@ function App() {
 								{isSuccess && data &&
 									<div>
 										<p className="text-sm text-gray-500">{`Authors: ${data.map(item => item.author).join(" and ")}`}</p>
-										<div className="w-full flex flex-row gap-2 items-center justify-center mt-2">
-											{data.map(item => <img key={item.title} src={item.imageUrl} className="w-112" />)}
+										<div className="w-full flex flex-row gap-2 sm:gap-4 items-center justify-center mt-2">
+											{data.map(item => <img key={item.title} src={item.imageUrl} className="w-24 sm:w-50" />)}
 										</div>
 									</div>}
 							</div>
