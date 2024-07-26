@@ -25,7 +25,7 @@ function App() {
 					<p className="mt-3 w-full  font-outfitRegular text-center text-3xl sm:text-5xl">I <span className="bg-myPink create-span hover:animate-create-text">create</span> for the web</p>
 				</header>
 				<main className="relative min-h-fit sm:h-[80%] min-w-[22em] sm:min-w-[40em] flex flex-col mt-6 w-full items-center gap-3">
-					<section className="relative sm:h-[50%] grid sm:grid-cols-12 gap-3 sm:gap-2 w-full max-w-[28em] sm:w-full sm:max-w-[50em] text-sm sm:text-md place-items-center">
+					<section className="relative sm:h-[50%] grid size-auto sm:grid-cols-12 sm:grid-rows-2 gap-3 sm:gap-2 w-full max-w-[28em] sm:w-full sm:max-w-[50em] text-sm sm:text-md place-items-center ">
 						<div className="relative sm:col-span-6 sm:row-span-1 flex flex-row gap-1 w-full border border-gray-200 rounded-lg shadow-md p-4 px-6 justify-between bg-gradient-to-br from-gray-50 to-zinc-100">
 							<div className="flex flex-col gap-2">
 								<div className="relative group flex items-center justify-center text:md sm:text-2xl shadow-md w-fit p-2 sm:p-3 rounded-xl border border-gray-100 transition-all ">
@@ -49,10 +49,10 @@ function App() {
 							<div
 								className="absolute -inset-2 rounded-lg bg-img-gradient opacity-75 blur"
 							/>
-							<img className="relative object-cover rounded-sm sm:w-[21.5em] " src="/images/nkem.jpg" />
+							<img className="relative object-cover rounded-sm sm:w-[22.5em] " src="/images/nkem.jpg" />
 						</div>
 
-						<div className="relative sm:col-span-6 sm:row-span-1 flex flex-col w-full border border-gray-200 rounded-lg shadow-md p-6 justify-center item bg-gradient-to-br from-gray-50 to-zinc-100 font-outfitLight text-sm group">
+						<div className="relative sm:col-span-6 sm:row-span-1 flex flex-col w-full border border-gray-200 rounded-lg shadow-md px-6 py-4 sm:py-4 justify-center item bg-gradient-to-br from-gray-50 to-zinc-100 font-outfitLight text-sm group">
 							<p className="overflow-y-auto sm:text-md text-justify">
 								Experienced Frontend Engineer with an MSc in Information Security. Interested in blockchain technologies, in particular, Ethereum & Solidity. My current focus is on building human-centered products and digital experiences, mostly through web(3) applications.
 							</p>
@@ -62,8 +62,8 @@ function App() {
 								Frontend engineer and Software engineer roles.</p>
 						</div>
 					</section>
-					<section className="relative sm:h-[48%] grid sm:grid-cols-12 gap-3 sm:gap-4 w-full max-w-[28em] sm:w-full sm:max-w-[50em] text-sm sm:text-md place-items-center">
-						<div className="flex flex-col gap-2 sm:gap-2 col-span-12 sm:col-span-7 w-full border border-gray-200 rounded-lg shadow-md p-5 sm:min- justify-center bg-gradient-to-br from-gray-50 to-zinc-100 group">
+					<section className="relative sm:h-[48%] grid sm:grid-cols-12 sm:auto-rows-max gap-3 sm:gap-4 w-full max-w-[28em] sm:w-full sm:max-w-[50em] text-sm sm:text-md place-items-center">
+						<div className="flex flex-col gap-2 sm:gap-2 col-span-12 sm:col-span-7 sm:row-span-2 w-full border border-gray-200 rounded-lg shadow-md p-5 justify-center bg-gradient-to-br from-gray-50 to-zinc-100 group">
 							<div className="relative group flex items-center justify-center text:lg sm:text-2xl shadow-md w-fit p-2 sm:p-3 rounded-xl border border-gray-100 transition-all group-hover:bg-img-gradient">
 								💼
 							</div>
@@ -86,7 +86,7 @@ function App() {
 						</div>
 
 						{/*Socials */}
-						<div className="flex flex-col gap-2 sm:gap-2 col-span-12 sm:col-span-5 w-full border border-gray-200 rounded-lg shadow-md p-5 justify-center bg-gradient-to-br from-gray-50 to-zinc-100 group">
+						<div className="flex flex-col gap-2 sm:gap-2 col-span-12 sm:col-span-5 sm:row-span-2 w-full border border-gray-200 rounded-lg shadow-md p-5 justify-center bg-gradient-to-br from-gray-50 to-zinc-100 group">
 							<div className="relative group flex items-center justify-center text:lg sm:text-2xl shadow-md w-fit p-2 sm:p-3 rounded-xl border border-gray-100 transition-all group-hover:bg-img-gradient">
 								🔗
 							</div>
@@ -98,7 +98,7 @@ function App() {
 						</div>
 
 						{/*tech stack */}
-						<div className="flex flex-col gap-2 sm:gap-2 col-span-12 w-full border border-gray-200 rounded-lg shadow-md p-5 justify-center bg-gradient-to-br from-gray-50 to-zinc-100 group">
+						<div className="flex flex-col gap-2 sm:gap-2 col-span-12 sm:row-span-2 w-full border border-gray-200 rounded-lg shadow-md p-5 justify-center bg-gradient-to-br from-gray-50 to-zinc-100 group">
 							<div className="relative group flex items-center justify-center text:lg sm:text-2xl shadow-md w-fit p-2 sm:p-4 rounded-xl border border-gray-100 transition-all group-hover:bg-img-gradient">
 								👨🏾‍💻
 							</div>
@@ -111,7 +111,7 @@ function App() {
 						</div>
 
 						{/* Currently readings */}
-						<div className="col-span-12 w-full flex flex-col gap-2 border border-gray-200 rounded-lg shadow-md p-5 justify-center bg-gradient-to-br from-gray-50 to-zinc-100 group">
+						<div className="col-span-12 w-full flex flex-col gap-2 sm:row-span-2 border border-gray-200 rounded-lg shadow-md p-5 justify-center bg-gradient-to-br from-gray-50 to-zinc-100 group">
 							<div className="relative group flex items-center justify-center text:lg sm:text-2xl shadow-md w-fit p-2 sm:p-3 rounded-xl border border-gray-100 transition-all group-hover:bg-img-gradient">
 								📚
 							</div>
