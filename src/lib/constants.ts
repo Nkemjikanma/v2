@@ -40,16 +40,16 @@ export const toolings = [{
 	tool: 'Typescript',
 	link: '/images/logos/typescript.svg'
 }, {
-	tool: 'Node',
+	tool: 'NodeJS',
 	link: '/images/logos/node.svg'
 }, {
 	tool: 'React',
 	link: '/images/logos/react.svg'
 }, {
-	tool: 'Next',
+	tool: 'NextJS',
 	link: '/images/logos/next.svg'
 }, {
-	tool: 'Tailwind',
+	tool: 'TailwindCSS',
 	link: '/images/logos/tailwind.svg'
 }, {
 	tool: 'Prisma',
