@@ -2,6 +2,7 @@ import { useGetReads } from "@/lib/hooks/useGetReads"
 import { cn } from "../lib/utils"
 
 import { experiences, introItems, socials, toolings } from "../lib/constants";
+import { ToolTipAction } from "./ToolTipAction";
 
 export const Main = () => {
 
@@ -45,7 +46,7 @@ export const Main = () => {
 					Experienced Frontend Engineer with an MSc in Information Security. Interested in blockchain technologies, in particular, Ethereum & Solidity. My current focus is on building human-centered products and digital experiences, mostly through web(3) applications.
 				</p>
 				<p className="mt-2 text-sm sm:text-md"> I am
-					<span className="mx-2 p-1 rounded-sm bg-myYellow group-hover:bg-myGreen currently-open text-justify">currently
+					<span className="mx-1 p-1 px-2 rounded-sm bg-myYellow group-hover:bg-myGreen currently-open text-justify">currently
 						open</span>to
 					Frontend engineer and Software engineer roles.</p>
 			</div>
@@ -81,7 +82,13 @@ export const Main = () => {
 				<p className="font-outfitRegular">Let's connect.</p>
 				<p className="font-outfitLight text-gray-500 text-sm">Some places you can find me</p>
 				<div className="grid grid-cols-4 gap-1 flex-wrap mt-3 w-full place-items-center">
-					{socials.map((social) => <a key={social.name} href={social.profile} target="_blank"><img src={social.logo} alt={social.name} className="w-8" /></a>)}
+					{socials.map((social) =>
+						<a key={social.name} href={social.profile} target="_blank">
+							<ToolTipAction side="top" align="center" label={social.name}>
+								<img src={social.logo} alt={social.name} className="w-8" />
+							</ToolTipAction>
+						</a>)
+					}
 				</div>
 			</div>
 
@@ -93,7 +100,13 @@ export const Main = () => {
 				<p className="font-outfitRegular">Tech stack.</p>
 				<p className="font-outfitLight text-gray-500 text-sm">Tooling I am familiar with and use</p>
 				<ul className="grid grid-cols-4 sm:grid-cols-9 gap-3 flex-wrap mt-3 place-items-center">
-					{toolings.map((tooling) => <li key={tooling.tool}><img src={tooling.link} alt={tooling.tool} className="w-8" /></li>)}
+					{toolings.map((tooling) =>
+						<li key={tooling.tool}>
+							<ToolTipAction side="top" align="center" label={tooling.tool}>
+								<img src={tooling.link} alt={tooling.tool} className="w-8" />
+							</ToolTipAction>
+						</li>)
+					}
 				</ul>
 
 			</div>
