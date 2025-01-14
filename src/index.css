@@ -67,13 +67,13 @@
 		--chart-5: hsl(340, 75%, 55%);
 	}
 
-	/* *,
+	*,
   *::before,
   *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  } */
+  }
 
 	.layout {
 		position: relative;
@@ -192,19 +192,6 @@
 		animation-delay: calc(var(--single-slide-speed) * var(--item-index) * -1);
 	}
 }
-
-
-/*
-
-
-
-
- grid-area: resting;
- animation: marquee-move var(--speed) linear infinite var(
-     --direction,
-     forwards
-   );
- animation-delay: calc(var(--single-slide-speed) * var(--item-position) * -1); */
 
  @keyframes corner {
 	0%,
