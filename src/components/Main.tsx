@@ -42,10 +42,10 @@ export const Main = () => {
 				</div>
 
 				<div className="hidden sm:relative sm:flex sm:items-center sm:justify-center sm:row-span-2 sm:col-span-6 sm:shrink-0">
-					<div className="absolute -inset-2 rounded-lg bg-img-gradient opacity-75 blur" />
+					<div className="absolute -inset-2 rounded-lg bg-img-gradient opacity-75 blur border p-2" />
 					<img
 						className="relative object-cover rounded-sm sm:w-[22.5em] "
-						src="/images/nkem_in_pixels.webp"
+						src="/images/nkem.jpg"
 						alt="nkemjika"
 					/>
 				</div>
