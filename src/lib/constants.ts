@@ -1,9 +1,9 @@
 export const introItems = [
 	{
-		value: "Male",
+		value: "Father and husband",
 	},
 	{
-		value: "Father and husband",
+		value: "Fullstack developer",
 	},
 	{
 		value: "Guitarist and songwriter",
@@ -103,11 +103,6 @@ export const toolings = [
 
 export const socials = [
 	{
-		name: "Farcaster",
-		logo: "/images/logos/farcaster.svg",
-		profile: "https://warpcast.com/nkemjika",
-	},
-	{
 		name: "Github",
 		logo: "/images/logos/github.svg",
 		profile: "https://github.com/Nkemjikanma",
@@ -121,6 +116,11 @@ export const socials = [
 		name: "Mail",
 		logo: "/images/logos/email.svg",
 		profile: "mailto:nkemjikaohanyere@gmail.com",
+	},
+	{
+		name: "Farcaster",
+		logo: "/images/logos/farcaster.svg",
+		profile: "https://warpcast.com/nkemjika",
 	},
 ];
 

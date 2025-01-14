@@ -45,17 +45,17 @@ export const Main = () => {
 					<div className="absolute -inset-2 rounded-lg bg-img-gradient opacity-75 blur" />
 					<img
 						className="relative object-cover rounded-sm sm:w-[22.5em] "
-						src="/images/nkem.jpg"
+						src="/images/nkem_in_pixels.webp"
 						alt="nkemjika"
 					/>
 				</div>
 
 				<div className="relative sm:col-span-6 sm:row-span-1 flex flex-col w-full border border-gray-200 rounded-lg shadow-md px-6 py-4 sm:py-4 justify-center item bg-gradient-to-br from-gray-50 to-zinc-100 font-outfitLight text-sm group">
 					<p className="overflow-y-auto sm:text-md text-justify">
-						Experienced Frontend Engineer with an MSc in Information Security.
-						Interested in blockchain technologies, in particular, Ethereum &
-						Solidity. My current focus is on building human-centered products
-						and digital experiences, mostly through web(3) applications.
+						Experienced fullstack (web3) engineer. Currently building on
+						Ethereum using Solidity and Rust, with React/Nextjs on the frontend.
+						My focus is on leverageing blockchain technologies to broaden access
+						and improve financial services through seemless digital experiences.
 					</p>
 					<p className="mt-2 text-sm sm:text-md">
 						I am
