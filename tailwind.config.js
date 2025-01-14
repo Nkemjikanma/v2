@@ -141,7 +141,6 @@ module.exports = {
 				"create-gradient": 'linear-gradient(to right, var(--myPink), var(--myYellow), var(--myBlue), var(--myGreen))',
 				'img-gradient': 'linear-gradient(to right, var(--myGreen), var(--myYellow))',
 			},
-
 		},
 	},
 	plugins: [require("tailwindcss-animate")],
