@@ -61,7 +61,7 @@ export const Main = () => {
 						<span className="mx-1 p-1 px-2 rounded-sm bg-myYellow group-hover:bg-myGreen currently-open text-justify">
 							currently open
 						</span>
-						to Frontend, Fullstack Web3 and Software engineer roles.
+						to Fullstack, Software engineering, Web3 and frontend engineering roles.
 					</p>
 				</div>
 			</section>
