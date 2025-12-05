@@ -2,7 +2,7 @@ import { useGetReads } from "@/lib/hooks/useGetReads";
 import { cn } from "../lib/utils";
 
 import type React from "react";
-import { experiences, introItems, socials, toolings } from "../lib/constants";
+import { experiences, introItems, socials, toolings, personal_projects } from "../lib/constants";
 import { ToolTipAction } from "./ToolTipAction";
 
 export const Main = () => {
@@ -52,8 +52,7 @@ export const Main = () => {
 
 				<div className="relative sm:col-span-6 sm:row-span-1 flex flex-col w-full border border-gray-200 rounded-lg shadow-md px-6 py-4 sm:py-4 justify-center item bg-gradient-to-br from-gray-50 to-zinc-100 font-outfitLight text-sm group">
 					<p className="overflow-y-auto sm:text-md text-justify">
-						Experienced fullstack (web3) engineer. Currently building on
-						Ethereum using Solidity and Rust, with React/Nextjs on the frontend.
+						Fullstack engineer. Currently building using Rust, Solidity and Tyepscript, with React/Nextjs on the frontend.
 						My focus is on leverageing blockchain technologies to broaden access
 						and improve financial services through seemless digital experiences.
 					</p>
@@ -78,7 +77,7 @@ export const Main = () => {
 						Journeys that are worth mentioning
 					</p>
 
-					<ul className="relative flex flex-col gap-1 pl-6 list-disc font-outfitLight text-gray-500 list-disc-pulse text-sm">
+					<ul className="relative flex flex-col gap-1 pl-6 list-disc font-outfitLight text-gray-700 list-disc-pulse text-sm">
 						{experiences.map((experience) => (
 							<li
 								key={experience.name}
@@ -113,6 +112,7 @@ export const Main = () => {
 					</p>
 					<div className="grid grid-cols-4 gap-1 flex-wrap mt-3 w-full place-items-center">
 						{socials.map((social) => (
+
 							<a
 								key={social.name}
 								href={social.profile}
@@ -127,6 +127,27 @@ export const Main = () => {
 					</div>
 				</div>
 
+
+				{/*Projects */}
+				<div className="relative flex flex-col gap-2 sm:gap-2 col-span-12 sm:row-span-2 w-full border border-gray-200 rounded-lg shadow-md p-5 justify-center bg-gradient-to-br from-gray-50 to-zinc-100 group">
+					<div className="relative group flex items-center justify-center text:lg sm:text-2xl shadow-md w-fit p-2 sm:p-4 rounded-xl border border-gray-100 transition-all group-hover:bg-img-gradient">
+						🛠️
+					</div>
+					<p className="font-outfitRegular">Projects.</p>
+					<p className="font-outfitLight text-gray-500 text-sm">
+						Personal projects worth noting
+					</p>
+					<ul className="relative flex flex-col gap-1 pl-6 list-disc font-outfitLight text-gray-700 list-disc-pulse text-sm">
+						{personal_projects.map((project) => (
+							<li key={project.name} className="flex flex-row justify-between w-full">
+								<a href={project.link} target="_blank" rel="noreferrer" className="flex flex-row gap-2 hover:scale-110 transition-all">
+									<p>{project.icon}</p> <p>{project.name}</p>
+								</a>
+								<p className="">{project.description}</p>
+							</li>
+						))}
+					</ul>
+				</div>
 				{/*tech stack */}
 				<div className="relative flex flex-col gap-2 sm:gap-2 col-span-12 sm:row-span-2 w-full border border-gray-200 rounded-lg shadow-md p-5 justify-center bg-gradient-to-br from-gray-50 to-zinc-100 group">
 					<div className="relative group flex items-center justify-center text:lg sm:text-2xl shadow-md w-fit p-2 sm:p-4 rounded-xl border border-gray-100 transition-all group-hover:bg-img-gradient">
